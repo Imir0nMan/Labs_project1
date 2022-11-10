@@ -4,20 +4,66 @@ def questions_for1():
     part_ofbody = input("Input a part of the body")
     adj2 = input("Input other ajcective ")
     verb = input("Input a verb ")
-    num2 = input("Input number ")
-    noun3 = input("Input noun again ")
+    num2 = input("Input a number ")
+    noun3 = input("Input a noun again ")
     part_ofbody2 = input("Input another part of the body")
-    noun4 = input("Input noun (this is the last time i promise) ")
+    noun4 = input("Input a noun (this is the last time i promise) ")
     adj3 = input("Input another ajcective ")
     silly = input("Input a silly word ")
 
 
-def dialog():
-    num  = input("Input number ")
+def questions_for2():
+    person_name = input("Input human name ")
+    adj_feeling = input("Input an adjective (feeling) ")
+    verb = input("Input any verb ")
+    adj_feeling2 = input("Input another adjective (feeling) ")
+    animal = input("Input clasification of animal ")
+    verb2 = input("Input any other verb ")
+    verb_ing = input("Input any verb (ending in ing) ")
+    adverb = input("Input an adverb (ending in ly) ")
+    silly = input("Input a silly word ")
+
+
+def questions_for3():
+    person_name = input("Input human name ")
+    adj = input("Input any adjective ")
+    animal = input("Input clasification of animal ")
+    place = input("Input a name of place ")
+    adj2 = input("Input other ajcective ")
+    magic_crtrs = input("Input any type of magic creature (plural) ")
+    adj3 = input("Input another ajcective ")
+    magic_crtrs2 = input("Input another type of magic creature (plural) ")
+    room = input("Input a name of room ")
+    nouns = input("Input any noun (plural) ")
+    adj4 = input("Input an ajcective again ")
+    nouns2 = input("Input any other noun (plural) ")
+    verb_ing = input("Input any verb (ending in ing) ")
+    noun3 = input("Input another noun ")
+    adj5 = input("Input an adjective (this is the last one i promise) ")
+
+
+def dialog(n):
+    num = input("Input a number ")
     measure_oftime = input("Input measure of time ")
-    noun = input("Input any noun ")    
+    noun = input("Input any noun ")
     color = input("Input some color ")
     noun2 = input("Input another noun ")
+    a = 0
+    if n == 1:
+        print(1)
+        questions_for1()
+        a = templates(1)
+    elif n == 2:
+        print(2)
+        questions_for2()
+        a = templates(2)
+    elif n == 3:
+        print(3)
+        questions_for3()
+        a = templates(3)
+
+    return a
+
 
 
 def templates(n):
@@ -45,7 +91,7 @@ def templates(n):
     There are {adj2} {magic_crtrs} and {adj3} {magic_crtrs2} here! In the {room} there is
     a pool full of {noun}. I fall asleep each night on a {noun2} of {nouns} and dream of 
     {adj4} {nouns2}. It feels as though I have lived here for {num} {measure_oftime}. I hope 
-    one day you can wisit, although the only way to get here now is {verb_ing} on a {adj5} {noun3}!!
+    one day you can wisit, although the only way to get here now is {verb_ing} on a {adj5} {noun3} !!
     """
 
     if n == 1:
