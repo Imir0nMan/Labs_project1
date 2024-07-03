@@ -19,6 +19,7 @@ def main():
 		n = input("incorrect, please write one number from 1 to 3 ")
 	dialog (int(n))
 
+
 # Don't worry, this is a generic way to run program
 if __name__ == "__main__":
 	main()
