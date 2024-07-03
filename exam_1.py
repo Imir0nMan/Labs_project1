@@ -1,5 +1,6 @@
 from source import *
 
+
 #this part make the game more interesting
 def intro():
 	print("Hi, this is a small game (press enter)")
