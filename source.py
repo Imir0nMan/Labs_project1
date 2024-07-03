@@ -29,6 +29,7 @@ def text_1():
     print()
     return v1
 
+
 #topic_2
 def text_2():
     num = input("Input a number ")
@@ -58,6 +59,7 @@ def text_2():
 
     print()
     return v2
+
 
 #topic_3
 def text_3():
@@ -92,6 +94,7 @@ def text_3():
     
     print()
     return v3
+
 
 #this function is for choosing needed topic
 def dialog(n):
